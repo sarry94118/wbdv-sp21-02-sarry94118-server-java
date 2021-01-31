@@ -1,0 +1,32 @@
+.container {
+    max-width: 500px;
+    margin: auto;
+}
+
+.content {
+    max-width: 500px;
+    margin: auto;
+}
+
+
+a {
+    color: dodgerblue;
+}
+
+b {
+    color: dodgerblue;
+    float: justify;
+}
+
+.right {
+    text-align: right;
+    float: right;
+}
+
+/*a:link {*/
+/*    color: darkred;*/
+/*}*/
+
+/*b:link {*/
+/*    color: darkred;*/
+/*}*/

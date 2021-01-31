@@ -1,0 +1,20 @@
+.container {
+    max-width: 500px;
+    margin: auto;
+}
+
+.content {
+    max-width: 500px;
+    margin: auto;
+}
+
+input, select{
+    width:100%;
+    box-sizing:border-box;
+}
+
+
+.my-read-only-class
+{
+    cursor: not-allowed;
+}

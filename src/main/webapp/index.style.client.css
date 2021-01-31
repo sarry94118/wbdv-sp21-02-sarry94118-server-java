@@ -1,0 +1,21 @@
+.container {
+    padding-top: 58px;
+}
+
+.wbdv-sticky-bar {
+    background-color: slategrey;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+a{
+    color: dodgerblue;
+    float: left;
+}
+
+.b {
+    color: dodgerblue;
+    float: left;
+}

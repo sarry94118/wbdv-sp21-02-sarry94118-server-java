@@ -1,0 +1,23 @@
+.b {
+    float: right;
+}
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+}
+
+@media screen and (max-width: 768px) {
+
+    #div-mobile { display: block; }
+    #div-desktop { display: none; }
+
+}
+
+.tableFixHead          { overflow-y: auto; height: 600px; }
+.tableFixHead thead th { position: sticky; top: 0; }
+
+/* Just common table stuff. Really. */
+table  { border-collapse: collapse; width: 100%; table-layout: auto; }
+th, td { padding: 8px 16px; }
+th     { background:#eee; }

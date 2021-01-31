@@ -1,0 +1,18 @@
+.container {
+    max-width: 500px;
+    margin: auto;
+}
+
+.content {
+    max-width: 500px;
+    margin: auto;
+}
+
+
+a {
+    size:90px;
+}
+
+a:link {
+    color: darkred;
+}

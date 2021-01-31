@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./profile.style.client.css">
+    <title>Profile</title>
+
+</head>
+
+
+<div class="container">
+    <h1>Profile</h1>
+    <div class="alert alert-primary" role="alert">
+        Profile has been updated successfully!
+    </div>
+    <br>
+    Username: <input id="disabledInput" placeholder="Yixuan123" disabled="disabled" readonly/>
+    </br>
+    <br>
+    Phone: <input id="phoneFld" placeholder="208-39-9334"/>
+    </br>
+    <br>
+    Email: <input id="emailFld" placeholder="yixuan231@gmail.com"/>
+    </br>
+    <form action="/action_page.php">
+        <br>
+        <label for="birthday">Date of Birth:</label>
+        <input type="date" id="birthday" name="birthday">
+    </form>
+    <form action="/action_page.php">
+        <br>
+        <label for="role">Role</label>
+        <select name="role" id="role">
+            <option value="Faculty">Faculty</option>
+            <option value="Student">Student</option>
+            <option value="Admin">Admin</option>
+        </select>
+    </form>
+    <br>
+    <a id="updateBtn" class="btn btn-success btn-block">Update</a>
+    <a id="logoutBtn" class="btn btn-danger btn-block" href="/index.html" >Logout</a>
+
+    <div class="alertFld">
+    </div>
+</div>
+</html>
