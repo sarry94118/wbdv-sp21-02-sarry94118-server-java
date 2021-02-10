@@ -2,4 +2,5 @@
 
 Name:Yixuan Liao
 
-Heroku link: https://whiteboard-yixuan.herokuapp.com/
+assignment 1 link: https://whiteboard-yixuan.herokuapp.com/
+assignment 2 link: https://whiteboard002.herokuapp.com/
