@@ -7,6 +7,11 @@
     float: right;
 }
 
+
+a, a:hover{
+    color:#333;
+}
+
 @media screen and (max-width: 768px) {
 
     #div-mobile { display: block; }

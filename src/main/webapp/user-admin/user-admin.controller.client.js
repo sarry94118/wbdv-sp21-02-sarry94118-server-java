@@ -63,7 +63,6 @@
             $userBody.append(`
             <tr class="wbdv-template wbdv-user wbdv-hidden">
                 <td class="wbdv-username">${user.Username}</td>
-  <!--               <td >${user.Password}</td>-->
                 <td>&nbsp;</td>
                 <td class="wbdv-first-name">${user.FirstName}</td>
                 <td class="wbdv-last-name">${user.LastName}</td>
@@ -117,6 +116,33 @@
                 users[index] = selectedUser
                 renderUser(users)
             })
+    }
+
+
+
+    $(document).ready(function() {
+        $("#show_hide_password a").on('click', function(event) {
+            event.preventDefault();
+            if($('#show_hide_password input').attr("type") == "text"){
+                $('#show_hide_password input').attr('type', 'password');
+                $('#show_hide_password i').addClass( "fa-eye-slash" );
+                $('#show_hide_password i').removeClass( "fa-eye" );
+            }else if($('#show_hide_password input').attr("type") == "password"){
+                $('#show_hide_password input').attr('type', 'text');
+                $('#show_hide_password i').removeClass( "fa-eye-slash" );
+                $('#show_hide_password i').addClass( "fa-eye" );
+            }
+        });
+    });
+
+    function Clear()
+    {
+        $('.wbdv-form input').each(function () {
+            $(this).val("");
+            x=1;
+        });
+        $('.wbdv-form input').first().focus();
+
     }
 
     $(main)
