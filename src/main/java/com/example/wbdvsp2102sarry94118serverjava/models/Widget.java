@@ -1,12 +1,6 @@
 package com.example.wbdvsp2102sarry94118serverjava.models;
-import javax.persistence.*;
 
-@Entity
-@Table(name="widgets")
 public class Widget {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String topicId;
     private String type;
@@ -136,30 +130,31 @@ public class Widget {
         this.text = text;
     }
 
-    public Widget(Long id, String topicId, String type, Integer size, String text) {
-        this.id = id;
-        this.topicId = topicId;
-        this.type = type;
-        this.size = size;
-        this.text = text;
-    }
-
-
-//    public Widget(Long id, String topicId, String type, Integer size, String text, Integer widgetOrder, String src, Integer width, Integer height, String cssClass, String style, String value, String name) {
+//    public Widget(Long id, String topicId, String type, Integer size, String text, String widgetOrder, String src) {
 //        this.id = id;
 //        this.topicId = topicId;
 //        this.type = type;
 //        this.size = size;
 //        this.text = text;
-//        this.widgetOrder = widgetOrder;
-//        this.src = src;
-//        this.width = width;
-//        this.height = height;
-//        this.cssClass = cssClass;
-//        this.style = style;
-//        this.value = value;
-//        this.name = name;
 //    }
+
+
+    public Widget(Long id, String topicId, String type, Integer size, String text, Integer widgetOrder, String src, Integer width, Integer height, String cssClass, String style, String value, String name, Boolean ordered) {
+        this.id = id;
+        this.topicId = topicId;
+        this.type = type;
+        this.size = size;
+        this.text = text;
+        this.widgetOrder = widgetOrder;
+        this.src = src;
+        this.width = width;
+        this.height = height;
+        this.cssClass = cssClass;
+        this.style = style;
+        this.value = value;
+        this.name = name;
+        this.ordered = ordered;
+    }
 
     public Widget() {
     }
