@@ -2,4 +2,4 @@
 
 Name:Yixuan Liao
 
-Heroku link: https://whiteboard-yixuan.herokuapp.com/
+Heroku link: https://yixuanjavaserver.herokuapp.com/api/widgets
