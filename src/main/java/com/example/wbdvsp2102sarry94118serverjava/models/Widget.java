@@ -1,6 +1,12 @@
 package com.example.wbdvsp2102sarry94118serverjava.models;
+import javax.persistence.*;
 
+@Entity
+@Table(name="widgets")
 public class Widget {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String topicId;
     private String type;
@@ -14,6 +20,16 @@ public class Widget {
     private String style;
     private String value;
     private String name;
+    private Boolean ordered;
+
+    public Boolean getOrdered() {
+        return ordered;
+    }
+
+    public void setOrdered(Boolean ordered) {
+        this.ordered = ordered;
+    }
+
 
     public Integer getWidgetOrder() {
         return widgetOrder;
